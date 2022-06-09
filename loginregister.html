@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepeInfo</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li style="margin-right: 1%;"><img src="/web_dev/imagini\cool_kid.png" alt="lol" width="45" height="50"></li>
+                <li><a class="hollow button" href="index.php">PepeInfo</a></li>
+                <li><a href="probleme.php">Probleme</a></li>
+                <li><a href="clasament.php">Clasament</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <form name="login_f" method="post" action="login.php" style="width:45%; float: left; padding: 5%;" onsubmit="return validateForm_1()">
+        <h3 style="text-align: center;">Autentificare</h3>
+        <label>Nume:</label>
+        <input type="text" placeholder="Enter Username" name="nume">
+        <label>Parola:</label>
+        <input type="password" placeholder="Enter Password" name="parola">
+        <button class="button" type="submit">Autentificare</button>
+    </form>
+
+    <form name="register_f" method="post" action="register.php" style="width:45%; float: left; padding: 5%;" onsubmit="return validateForm_2()">
+        <h3 style="text-align: center;">Inregistrare</h3>
+        <label>Nume:</label>
+        <input type="text" placeholder="Enter Username" name="username" >
+        <label>Email:</label>
+        <input type="text" name="mail" placeholder="adresa@email.com">
+        <label>Scoala:</label>
+        <input type="text" name="school" placeholder="Scoala Gimnaziala Gelu">
+        <label>Parola:</label>
+        <input type="password" placeholder="Enter Password" name="password" >
+        <button class="button" style="display: grid;" type="submit">Inregistrare</button>
+    </form>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
